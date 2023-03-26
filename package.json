@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "breedFetcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-saim/json_the_cat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/x-saim/json_the_cat/issues"
+  },
+  "homepage": "https://github.com/x-saim/json_the_cat#readme",
+  "description": ""
+}
