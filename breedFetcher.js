@@ -14,8 +14,16 @@ const fetcher = (breed) => {
   let searchLink = apiLink + breedString;
   console.log(searchLink);
   request(searchLink,(error,response,body) => {
-    console.error(error);
-    console.log("statusCode:", response && response.statusCode);
+    if (error) {
+      console.error(`Error: ${error.message}`);
+      return;
+    }
+    if (response.statusCode !== 200) {
+      console.error(`Error: Invalid URL: ${link}`);
+      return;
+    }
+    console.log('statusCode:', response && response.statusCode);
+    
     const data = JSON.parse(body);
     console.log(data[0]["description"]);
 
