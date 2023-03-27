@@ -1,6 +1,5 @@
 const request = require("request");
 
-//https://api.thecatapi.com/v1/breeds/search
 
 let args = process.argv;
 args = args.slice(2); //reassigning array to args and ignoring the node executable and file path. 
@@ -23,7 +22,7 @@ const fetcher = (breed) => {
       return;
     }
     console.log('statusCode:', response && response.statusCode);
-    
+
     const data = JSON.parse(body);
     console.log(data[0]["description"]);
 
