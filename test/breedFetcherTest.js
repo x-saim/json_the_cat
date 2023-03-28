@@ -18,9 +18,8 @@ describe('fetchBreedDescription', () => {
 
   it("'returns an error message for an invalid breed, via callback", (done) =>{
     fetchBreedDescription('nonexistentBreed', (err, desc) => {
-      assert.equal(err, err);
-      const error = "Error: The following breed not found or does not exist: nonexistentBreed.";
-      assert.equal(desc, error);
+      const errorMsg = "Error: The cat breed was not found or does not exist.";
+      assert.equal(desc, errorMsg);
       done();
     });
 
