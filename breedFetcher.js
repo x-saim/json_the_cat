@@ -6,12 +6,6 @@ const fetchBreedDescription = ((breedName, callback) => {
     if (error) {    //Edge Case: Request Failed
       callback(error,null);
     }
-
-    if (response.statusCode !== 200) {
-      console.error(`Error: Invalid URL: https://api.thecatapi.com/v1/breeds/search?q=${breedName}`);
-      return;
-    }
-    console.log('statusCode:', response && response.statusCode);
     
     const data = JSON.parse(body); //parse JSON string into JS object.
 
