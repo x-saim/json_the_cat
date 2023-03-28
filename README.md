@@ -1,5 +1,5 @@
-# Breed Description Fetcher
-Breed Description Fetcher is a command line app that fetches information about cat breeds from [The Cat API](https://thecatapi.com/) and provides users with a short description of the breed they are interested in. This app serves as a proof of concept for querying datasets through the terminal and is built with Node.js.
+# Cat Breed Description Fetcher
+The Cat Breed Description Fetcher is a command line app that fetches information about cat breeds from [The Cat API](https://thecatapi.com/) and provides users with a short description of the breed they are interested in. This app serves as a proof of concept for querying datasets through the terminal and is built with Node.js.
 
 ## Installation
 To use this app, you need to have Node.js installed on your machine. You can download Node.js from https://nodejs.org/.
