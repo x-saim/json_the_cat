@@ -1,12 +1,12 @@
 {
-  "name": "api",
+  "name": "@x-saim/json_the_cat",
   "version": "1.0.0",
   "main": "breedFetcher.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "@x-saim",
   "license": "ISC",
   "dependencies": {
     "request": "^2.88.2"
@@ -23,5 +23,5 @@
     "url": "https://github.com/x-saim/json_the_cat/issues"
   },
   "homepage": "https://github.com/x-saim/json_the_cat#readme",
-  "description": ""
+  "description": "A command line app that allows users to access The Cat API's breed descriptions from the terminal."
 }

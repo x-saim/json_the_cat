@@ -17,7 +17,7 @@ node index.js siamese
 This will fetch information about the Siamese breed from the API and print out a short description.
 
 ## Testing
-This app includes test code written using Mocha and Chai. To run the tests, use the command `npm test` in your terminal.
+This app includes test code written using Mocha and Chai. To run the tests, use the command `npx mocha` or `npm test` in your terminal.
 
 ## Contributors
 This app was created by [@x-saim](https://github.com/x-saim). If you would like to contribute to the project, please feel free to submit a pull request.
