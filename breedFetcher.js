@@ -11,7 +11,6 @@ const fetchBreedDescription = ((breedName, callback) => {
       console.error(`Error: Invalid URL: https://api.thecatapi.com/v1/breeds/search?q=${breedName}`);
       return;
     }
-
     console.log('statusCode:', response && response.statusCode);
     
     const data = JSON.parse(body); //parse JSON string into JS object.
@@ -21,7 +20,6 @@ const fetchBreedDescription = ((breedName, callback) => {
     } else {
       callback(null, data[0]["description"]); //data[0] is the breed and we are accessing the description key's value.
     }
-       
 
   });
 });
